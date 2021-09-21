@@ -8,7 +8,9 @@ DEBUG = True
 
 # Connect to the database
 
+database_uri = os.environ.get(
+    'DATABASE_URI', 'postgresql://admin:Opadah12@localhost:5432/fyyur')
 
 # TODO IMPLEMENT DATABASE URL
 # SQLALCHEMY_DATABASE_URI = '<Put your local database url>'
-SQLALCHEMY_DATABASE_URI = 'postgresql://admin:Opadah12@localhost:5432/fyyur'
+SQLALCHEMY_DATABASE_URI = database_uri

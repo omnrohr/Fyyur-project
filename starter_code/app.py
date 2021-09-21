@@ -21,19 +21,6 @@ moment = Moment(app)
 db = connect_db(app)
 
 
-#----------------------------------------------------------------------------#
-# Filters.
-#----------------------------------------------------------------------------#
-
-
-# def format_datetime(value, format='medium'):
-#     if isinstance(value, str):
-#         date = dateutil.parser.parse(value)
-#     else:
-#         date = value
-
-
-# app.jinja_env.filters['datetime'] = format_datetime
 
 
 #----------------------------------------------------------------------------#
